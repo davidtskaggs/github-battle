@@ -15,6 +15,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
 .avatar {
   width: 150px;
   border-radius: 50%;
