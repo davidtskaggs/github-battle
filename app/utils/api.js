@@ -7,5 +7,10 @@ module.exports = {
       repositories?q=stars:>1+language:'+ language +
       '&sort=stars&order=desc&type=Repositories');
 
+      return axios.get(encodeURI)
+      .then(function () {
+        return response.data.items;
+      });
+
   }
 }
