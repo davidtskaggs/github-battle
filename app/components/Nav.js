@@ -1,6 +1,7 @@
 var React = require('react')
-var NavLink = require('require-router-dom').NavLink;
-function Nav () {
+var NavLink = require('react-router-dom').NavLink;
+
+function Nav() {
   return (
     <ul className='nav'>
       <li>
