@@ -51,3 +51,15 @@ li {
   margin: 10 px;
   padding-bottom: 8px;
 }
+
+.nav {
+  display: flex;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav li {
+  margin-right: 15px;
+}
