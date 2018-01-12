@@ -49,6 +49,12 @@ function getUserData(player) {
   })
 }
 
+function sortPlayers() {
+  return players.sort(function(a,b) {
+    return b.score - a.score;
+  });
+}
+
 module.exports = {
   battle: function (players) {
 
