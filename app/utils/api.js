@@ -12,7 +12,9 @@ function getProfile(username) {
     });
 }
 
-getProfile('')
+function getRepos(username) {
+  return axios.get('https://api.github.com/users/' + username + '/repos' + params + '&per_page=100')
+}
 
 module.exports = {
   battle: function (players) {
