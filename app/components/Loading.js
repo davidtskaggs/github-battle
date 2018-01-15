@@ -1,4 +1,4 @@
-var react = require('react');
+var React = require('react');
 var PropTypes = require('prop-types');
 
 var styles = {
@@ -11,7 +11,6 @@ var styles = {
 class Loading extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       text: props.text
     };
@@ -24,12 +23,13 @@ class Loading extends React.Component {
     )
   }
 }
-loading.propTypes = {
-  text: PropTypes.string.isRequired
-}
 
-loading.defaultProps = {
+Loading.propTypes = {
+  text: PropTypes.string.isRequired
+};
+
+Loading.defaultProps = {
   text: 'Loading'
-}
+};
 
 module.exports = Loading;
