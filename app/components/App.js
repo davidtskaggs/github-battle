@@ -9,7 +9,6 @@ var Home = require('./Home');
 var Battle = require('./Battle');
 var Results = require('./Results');
 
-
 class App extends React.Component {
   render() {
     return (
