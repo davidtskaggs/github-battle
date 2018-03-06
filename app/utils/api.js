@@ -2,10 +2,10 @@ const axios = require('axios');
 
 const id = "YOUR_CLIENT_ID";
 const sec = "YOUR_SECRET_ID";
-const params = "?client_id=" + id + "&client_secret=" + sec;
+const params = `?client_id= ${id}&client_secret=${sec}`;
 
 function getProfile (username) {
-  return axios.get('https://api.github.com/users/' + username + params)
+  return axios.get(`https://api.github.com/users/${username}${params}`)
     .then(function (user) {
       return user.data;
     });
