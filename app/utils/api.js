@@ -30,12 +30,10 @@ function getUserData (player) {
   return Promise.all([
     getProfile(player),
     getRepos(player)
-  ]).then(([profile, repos]) => {
-    return {
-      profile: profile,
+  ]).then(([profile, repos]) => ({
+      profile,
       score: calculateScore(profile, repos)
-    }
-  });
+  }))
 }
 
 function sortPlayers (players) {
