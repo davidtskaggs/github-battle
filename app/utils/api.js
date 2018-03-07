@@ -17,7 +17,7 @@ function getStarCount (repos) {
   return repos.data.reduce((count, {stargazers_count}) => count + stargazers_count, 0);
 }
 
-function calculateScore ({followers}, repos) {
+function calculateScore ({ followers }, repos) {
   return (followers * 3) + getStarCount(repos);
 }
 
@@ -27,7 +27,7 @@ function handleError (error) {
 }
 
 function getUserData (player) {
-  return axios.all([
+  return Promise.all([
     getProfile(player),
     getRepos(player)
   ]).then(function (data) {
